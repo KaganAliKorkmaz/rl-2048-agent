@@ -1,5 +1,5 @@
 import pygame
-from Game_2048_BE import Game2048Env  # sınıfı buraya koyduğunu varsayıyorum
+from .Game_2048_BE import Game2048Env
 
 TILE_SIZE = 100
 GRID_SIZE = 4
@@ -12,13 +12,12 @@ pygame.display.set_caption("2048")
 font = pygame.font.SysFont("Arial", 32, bold=True)
 
 def draw_board(env):
-    screen.fill((187, 173, 160))  # arka plan
+    screen.fill((187, 173, 160))
     for i in range(GRID_SIZE):
         for j in range(GRID_SIZE):
             val = env.board[i][j]
             x = MARGIN + j * (TILE_SIZE + MARGIN)
             y = MARGIN + i * (TILE_SIZE + MARGIN)
-            # basit tek renk – istersen sonra value'ya göre renk paleti eklersin
             pygame.draw.rect(screen, (205, 193, 180), (x, y, TILE_SIZE, TILE_SIZE))
             if val != 0:
                 text = font.render(str(val), True, (0, 0, 0))
@@ -32,7 +31,7 @@ def main():
     running = True
 
     while running:
-        clock.tick(60)  # FPS
+        clock.tick(60)
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:

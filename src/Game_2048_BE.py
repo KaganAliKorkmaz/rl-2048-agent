@@ -1,20 +1,15 @@
-# Game_2048_BE.py
-
 import random
 
 
 class Game2048Env:
     def __init__(self, size=4, max_spawn_tile=None):
         self.size = size
-        self.max_spawn_tile = max_spawn_tile  # Curriculum learning: 128, 256, or None (normal)
+        self.max_spawn_tile = max_spawn_tile
         self.board = None
         self.score = 0
         self.done = False
         self.reset()
 
-    # -------------------------------------------------------------------------
-    # Basic environment API
-    # -------------------------------------------------------------------------
     def reset(self):
         self.board = [[0] * self.size for _ in range(self.size)]
         self.score = 0
@@ -24,7 +19,6 @@ class Game2048Env:
         return self.get_state()
 
     def get_state(self):
-        # Return a deep copy of the board
         return [row[:] for row in self.board]
 
     def step(self, action, corner="top_left", alpha=0.001, merge_scale=0.1, no_move_penalty=-0.1):
@@ -37,7 +31,6 @@ class Game2048Env:
 
         potential_before = self._corner_potential(corner=corner)
 
-        # Apply action to the REAL board
         if action == 0:
             changed, gain = self._move_up()
         elif action == 1:
@@ -49,19 +42,16 @@ class Game2048Env:
         else:
             raise ValueError(f"Invalid action: {action}")
 
-        # Scale merge reward to keep values moderate and soften penalty on no-change moves.
         base_reward = gain * merge_scale
 
         if changed:
             self._add_random_tile()
         else:
-            # Penalty for useless move
             base_reward += no_move_penalty
 
         potential_after = self._corner_potential(corner=corner)
         shaped_reward = base_reward + alpha * (potential_after - potential_before)
 
-        # Robust termination: if no move changes the board, game over
         if not self._can_move():
             self.done = True
 
@@ -79,9 +69,6 @@ class Game2048Env:
             print(line)
             print("-" * (self.size * 6 + 1))
 
-    # -------------------------------------------------------------------------
-    # Tile spawning
-    # -------------------------------------------------------------------------
     def _add_random_tile(self):
         empty = [
             (i, j)
@@ -93,25 +80,15 @@ class Game2048Env:
             return
         i, j = random.choice(empty)
         
-        # Curriculum learning: limit max spawn tile
         if self.max_spawn_tile is not None:
-            # Only spawn tiles up to max_spawn_tile
-            # For max_spawn_tile=128, we can spawn 2, 4, 8, 16, 32, 64, 128
-            # For max_spawn_tile=256, we can spawn up to 256
             max_value = self.max_spawn_tile
-            # Check if we should spawn 4 (10% chance) or 2 (90% chance)
             spawn_value = 4 if random.random() < 0.1 else 2
-            # But respect max_spawn_tile limit
             if spawn_value > max_value:
                 spawn_value = 2 if max_value >= 2 else 2
             self.board[i][j] = spawn_value
         else:
-            # Normal 2048: 4 with 10% chance, 2 with 90% chance
             self.board[i][j] = 4 if random.random() < 0.1 else 2
 
-    # -------------------------------------------------------------------------
-    # Core 2048 mechanics – row compression/merge + real moves
-    # -------------------------------------------------------------------------
     def _compress_and_merge_line(self, line):
         """
         Slide a single row/column to the left and merge.
@@ -134,11 +111,8 @@ class Game2048Env:
             else:
                 new_tiles.append(tiles[i])
 
-        # Pad with zeros to maintain length
         new_tiles += [0] * (self.size - len(new_tiles))
         return new_tiles, score_gain
-
-    # ---- REAL moves that mutate self.board ----
 
     def _move_left(self):
         changed = False
@@ -173,7 +147,6 @@ class Game2048Env:
     def _move_up(self):
         changed = False
         total_gain = 0
-        # columns as lists
         cols = [[self.board[i][j] for i in range(self.size)] for j in range(self.size)]
         new_cols = []
         for col in cols:
@@ -182,7 +155,6 @@ class Game2048Env:
                 changed = True
             total_gain += gain
             new_cols.append(new_col)
-        # write back
         for j in range(self.size):
             for i in range(self.size):
                 self.board[i][j] = new_cols[j][i]
@@ -208,9 +180,6 @@ class Game2048Env:
         self.score += total_gain
         return changed, total_gain
 
-    # -------------------------------------------------------------------------
-    # Pure simulation of moves (no side effects) for can_move()
-    # -------------------------------------------------------------------------
     def _simulate_left(self, board):
         total_gain = 0
         new_board = []
@@ -280,21 +249,12 @@ class Game2048Env:
             raise ValueError(f"Invalid action: {action}")
 
     def _can_move(self):
-        """
-        Robust game-over check:
-        For each of the 4 actions, simulate a move on a COPY of the board.
-        If none of them change the board, no moves are possible -> game over.
-        """
         for action in range(4):
             board_copy = [row[:] for row in self.board]
             _, _, changed = self._simulate_move(board_copy, action)
             if changed:
                 return True
         return False
-
-    # -------------------------------------------------------------------------
-    # Corner heuristic & potential for reward shaping
-    # -------------------------------------------------------------------------
     def _build_corner_weights(self, corner="top_left"):
         base = [
             [16,  8,  4,  2],

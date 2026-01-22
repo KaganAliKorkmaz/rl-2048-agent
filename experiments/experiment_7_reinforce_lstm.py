@@ -1,8 +1,9 @@
-# experiment_7_reinforce_lstm.py
-# REINFORCE (Monte Carlo Policy Gradient) with LSTM + Baseline
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 import torch
-from Policy_Gradient import train_reinforce_with_baseline_lstm, evaluate_policy_advanced
+from src.Policy_Gradient import train_reinforce_with_baseline_lstm, evaluate_policy_advanced
 import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
@@ -12,6 +13,9 @@ if __name__ == "__main__":
         device = "mps"
     else:
         device = "cpu"
+    
+    results_dir = os.path.join(os.path.dirname(__file__), '..', 'results')
+    os.makedirs(results_dir, exist_ok=True)
     
     policy_net, value_net, training_scores, eval_results, training_metrics = train_reinforce_with_baseline_lstm(
         num_episodes=10000,
@@ -24,7 +28,7 @@ if __name__ == "__main__":
         value_coef=0.5,
         max_steps_per_episode=3000,
         max_grad_norm=1.0,
-        checkpoint_dir="checkpoints_reinforce_lstm",
+        checkpoint_dir=os.path.join(os.path.dirname(__file__), '..', 'checkpoints', 'reinforce_lstm'),
         truncated_bptt=20,
         curriculum_stages=[
             (0, 3000, 128),
@@ -63,7 +67,7 @@ if __name__ == "__main__":
         plt.title('REINFORCE LSTM - Training Curve')
         plt.legend()
         plt.grid(True)
-        plt.savefig('reinforce_lstm_training_curve.png', dpi=150, bbox_inches='tight')
+        plt.savefig(os.path.join(results_dir, 'reinforce_lstm_training_curve.png'), dpi=150, bbox_inches='tight')
         print("Training curve saved: reinforce_lstm_training_curve.png")
         plt.close()
     
@@ -103,7 +107,7 @@ if __name__ == "__main__":
         axes[1, 1].grid(True)
         
         plt.tight_layout()
-        plt.savefig('reinforce_lstm_metrics.png', dpi=150, bbox_inches='tight')
+        plt.savefig(os.path.join(results_dir, 'reinforce_lstm_metrics.png'), dpi=150, bbox_inches='tight')
         print("LSTM metrics saved: reinforce_lstm_metrics.png")
         plt.close()
     
@@ -151,7 +155,7 @@ if __name__ == "__main__":
         axes[1, 1].grid(True)
         
         plt.tight_layout()
-        plt.savefig('reinforce_lstm_evaluation_curve.png', dpi=150, bbox_inches='tight')
+        plt.savefig(os.path.join(results_dir, 'reinforce_lstm_evaluation_curve.png'), dpi=150, bbox_inches='tight')
         print("Evaluation curve saved: reinforce_lstm_evaluation_curve.png")
         plt.close()
     
