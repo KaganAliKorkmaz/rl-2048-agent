@@ -163,27 +163,6 @@ Or install manually:
 pip install torch numpy matplotlib pygame
 ```
 
-## Usage
 
-### Running Experiments
-
-```bash
-# REINFORCE (without entropy)
-python experiments/experiment_1_no_entropy.py
-# REINFORCE (with entropy)
-python experiments/experiment_2_with_entropy.py
-# A2C
-python experiments/experiment_3_a2c.py
-# PPO
-python experiments/experiment_4_ppo.py
-# PPO Advanced (LSTM)
-python experiments/experiment_5_ppo_advanced.py
-# PPO Advanced (No LSTM)
-python experiments/experiment_5_ppo_advanced_no_lstm.py
-# REINFORCE Advanced
-python experiments/experiment_6_reinforce_advanced.py
-# REINFORCE LSTM
-python experiments/experiment_7_reinforce_lstm.py
-```
 
 
