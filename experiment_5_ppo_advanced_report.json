@@ -1,0 +1,97 @@
+{
+  "training": {
+    "total_episodes": 10000,
+    "best_score": 9460,
+    "final_avg_score": 3641.04
+  },
+  "final_evaluation": {
+    "num_episodes": 100,
+    "avg_score": 3483.6,
+    "best_score": 9524,
+    "best_tile": 512,
+    "tiles_1024_count": 0,
+    "tiles_2048_count": 0
+  },
+  "periodic_evaluations": [
+    {
+      "episode": 1000,
+      "avg_score": 3883.68,
+      "best_score": 8540,
+      "best_tile": 512,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 2000,
+      "avg_score": 3951.6,
+      "best_score": 12960,
+      "best_tile": 1024,
+      "1024_count": 2,
+      "2048_count": 0
+    },
+    {
+      "episode": 3000,
+      "avg_score": 3517.68,
+      "best_score": 8312,
+      "best_tile": 512,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 4000,
+      "avg_score": 3488.16,
+      "best_score": 10676,
+      "best_tile": 1024,
+      "1024_count": 1,
+      "2048_count": 0
+    },
+    {
+      "episode": 5000,
+      "avg_score": 3361.36,
+      "best_score": 6528,
+      "best_tile": 512,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 6000,
+      "avg_score": 3054.16,
+      "best_score": 7300,
+      "best_tile": 512,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 7000,
+      "avg_score": 3860.16,
+      "best_score": 11224,
+      "best_tile": 1024,
+      "1024_count": 1,
+      "2048_count": 0
+    },
+    {
+      "episode": 8000,
+      "avg_score": 3575.28,
+      "best_score": 7624,
+      "best_tile": 512,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 9000,
+      "avg_score": 3577.68,
+      "best_score": 8032,
+      "best_tile": 512,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 10000,
+      "avg_score": 3538.08,
+      "best_score": 10276,
+      "best_tile": 1024,
+      "1024_count": 1,
+      "2048_count": 0
+    }
+  ]
+}

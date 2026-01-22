@@ -1,0 +1,66 @@
+================================================================================
+DENEY-3: Advantage Actor-Critic (A2C)
+================================================================================
+Using device: cpu
+Parameters: entropy_coef=5e-4, value_coef=0.5
+================================================================================
+Episode 50/2000 | Score: 2072 | Avg(50): 1055.6 | Actor Loss: -0.001 | Critic Loss: 469.156 | Best score: 2740 | Best tile: 256
+Episode 100/2000 | Score: 1264 | Avg(50): 1168.9 | Actor Loss: -0.001 | Critic Loss: 1109.392 | Best score: 2740 | Best tile: 256
+Episode 150/2000 | Score: 472 | Avg(50): 1113.3 | Actor Loss: -0.001 | Critic Loss: 3597.713 | Best score: 2740 | Best tile: 256
+Episode 200/2000 | Score: 1304 | Avg(50): 1006.9 | Actor Loss: -0.001 | Critic Loss: 2746.839 | Best score: 2740 | Best tile: 256
+Episode 250/2000 | Score: 368 | Avg(50): 1155.8 | Actor Loss: -0.001 | Critic Loss: 3299.464 | Best score: 2740 | Best tile: 256
+Episode 300/2000 | Score: 1532 | Avg(50): 1200.1 | Actor Loss: -0.001 | Critic Loss: 3004.021 | Best score: 2760 | Best tile: 256
+Episode 350/2000 | Score: 820 | Avg(50): 1029.7 | Actor Loss: -0.001 | Critic Loss: 2541.984 | Best score: 2760 | Best tile: 256
+Episode 400/2000 | Score: 520 | Avg(50): 1021.9 | Actor Loss: -0.001 | Critic Loss: 2102.102 | Best score: 3132 | Best tile: 256
+Episode 450/2000 | Score: 2228 | Avg(50): 1050.0 | Actor Loss: -0.001 | Critic Loss: 2050.273 | Best score: 3132 | Best tile: 256
+Episode 500/2000 | Score: 1468 | Avg(50): 1122.2 | Actor Loss: -0.001 | Critic Loss: 2114.319 | Best score: 3132 | Best tile: 256
+Episode 550/2000 | Score: 608 | Avg(50): 1119.0 | Actor Loss: -0.001 | Critic Loss: 1982.853 | Best score: 3132 | Best tile: 256
+Episode 600/2000 | Score: 612 | Avg(50): 1055.7 | Actor Loss: -0.001 | Critic Loss: 1936.016 | Best score: 3132 | Best tile: 256
+Episode 650/2000 | Score: 544 | Avg(50): 1073.2 | Actor Loss: -0.001 | Critic Loss: 1754.597 | Best score: 3132 | Best tile: 256
+Episode 700/2000 | Score: 1452 | Avg(50): 1029.1 | Actor Loss: -0.001 | Critic Loss: 1779.969 | Best score: 3132 | Best tile: 256
+Episode 750/2000 | Score: 908 | Avg(50): 1020.7 | Actor Loss: -0.001 | Critic Loss: 1688.589 | Best score: 3132 | Best tile: 256
+Episode 800/2000 | Score: 2460 | Avg(50): 1105.4 | Actor Loss: -0.001 | Critic Loss: 1756.760 | Best score: 3132 | Best tile: 256
+Episode 850/2000 | Score: 1800 | Avg(50): 1130.9 | Actor Loss: -0.001 | Critic Loss: 1905.592 | Best score: 3132 | Best tile: 256
+Episode 900/2000 | Score: 280 | Avg(50): 1011.7 | Actor Loss: -0.001 | Critic Loss: 1793.483 | Best score: 3132 | Best tile: 256
+Episode 950/2000 | Score: 468 | Avg(50): 1267.8 | Actor Loss: -0.001 | Critic Loss: 2211.853 | Best score: 3360 | Best tile: 256
+Episode 1000/2000 | Score: 1360 | Avg(50): 1027.1 | Actor Loss: -0.001 | Critic Loss: 1827.166 | Best score: 3360 | Best tile: 256
+Episode 1050/2000 | Score: 288 | Avg(50): 1080.5 | Actor Loss: -0.001 | Critic Loss: 1861.158 | Best score: 3360 | Best tile: 256
+Episode 1100/2000 | Score: 1420 | Avg(50): 1063.3 | Actor Loss: -0.001 | Critic Loss: 1694.553 | Best score: 3360 | Best tile: 256
+Episode 1150/2000 | Score: 816 | Avg(50): 1115.3 | Actor Loss: -0.001 | Critic Loss: 1885.547 | Best score: 3360 | Best tile: 256
+Episode 1200/2000 | Score: 504 | Avg(50): 1201.1 | Actor Loss: -0.001 | Critic Loss: 2081.210 | Best score: 3360 | Best tile: 256
+Episode 1250/2000 | Score: 1288 | Avg(50): 1034.6 | Actor Loss: -0.001 | Critic Loss: 1675.683 | Best score: 3360 | Best tile: 256
+Episode 1300/2000 | Score: 600 | Avg(50): 1049.7 | Actor Loss: -0.001 | Critic Loss: 1749.600 | Best score: 3360 | Best tile: 256
+Episode 1350/2000 | Score: 1292 | Avg(50): 1062.1 | Actor Loss: -0.001 | Critic Loss: 1795.868 | Best score: 3360 | Best tile: 256
+Episode 1400/2000 | Score: 612 | Avg(50): 1117.0 | Actor Loss: -0.001 | Critic Loss: 1810.772 | Best score: 3360 | Best tile: 256
+Episode 1450/2000 | Score: 2352 | Avg(50): 1216.7 | Actor Loss: -0.001 | Critic Loss: 2051.250 | Best score: 3360 | Best tile: 256
+Episode 1500/2000 | Score: 620 | Avg(50): 1066.8 | Actor Loss: -0.001 | Critic Loss: 1839.718 | Best score: 3360 | Best tile: 256
+Episode 1550/2000 | Score: 588 | Avg(50): 961.1 | Actor Loss: -0.001 | Critic Loss: 1565.975 | Best score: 3360 | Best tile: 256
+Episode 1600/2000 | Score: 1100 | Avg(50): 1221.6 | Actor Loss: -0.001 | Critic Loss: 2085.251 | Best score: 3360 | Best tile: 256
+Episode 1650/2000 | Score: 2624 | Avg(50): 1053.9 | Actor Loss: -0.001 | Critic Loss: 1902.298 | Best score: 3360 | Best tile: 256
+Episode 1700/2000 | Score: 1372 | Avg(50): 974.4 | Actor Loss: -0.001 | Critic Loss: 1562.273 | Best score: 3360 | Best tile: 256
+Episode 1750/2000 | Score: 768 | Avg(50): 986.0 | Actor Loss: -0.001 | Critic Loss: 1490.344 | Best score: 3360 | Best tile: 256
+Episode 1800/2000 | Score: 836 | Avg(50): 1219.5 | Actor Loss: -0.001 | Critic Loss: 2090.534 | Best score: 3360 | Best tile: 256
+Episode 1850/2000 | Score: 688 | Avg(50): 1130.5 | Actor Loss: -0.001 | Critic Loss: 2049.263 | Best score: 3360 | Best tile: 256
+Episode 1900/2000 | Score: 1188 | Avg(50): 1050.4 | Actor Loss: -0.001 | Critic Loss: 1716.402 | Best score: 3360 | Best tile: 256
+Episode 1950/2000 | Score: 1320 | Avg(50): 1076.6 | Actor Loss: -0.001 | Critic Loss: 1656.643 | Best score: 3360 | Best tile: 256
+Episode 2000/2000 | Score: 888 | Avg(50): 1056.0 | Actor Loss: -0.001 | Critic Loss: 1688.006 | Best score: 3360 | Best tile: 256
+Training complete | Best score: 3360 | Best tile: 256
+
+Generating training plot...
+Saved average score plot to experiment_3_a2c_training.png
+
+Running evaluation...
+Evaluation over 50 episodes: avg score = 2364.9, best score = 7152, best tile = 512
+
+Generating evaluation plot...
+Saved evaluation score plot to experiment_3_a2c_evaluation.png
+
+================================================================================
+DENEY-3 SONUÇLARI (A2C):
+================================================================================
+Average evaluation score: 2364.9
+Best evaluation score: 7152
+(Best tile information is shown in evaluation output above)
+================================================================================
+Training and evaluation complete for Experiment 3 (A2C).
+================================================================================

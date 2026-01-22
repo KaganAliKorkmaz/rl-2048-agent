@@ -1,0 +1,66 @@
+================================================================================
+DENEY-2: REINFORCE (Entropy AÇIK)
+================================================================================
+Using device: cpu
+Parameters: entropy_coef=5e-4
+================================================================================
+Episode 50/2000 | Score: 668 | Avg(50): 1012.2 | Baseline: 31.17 | Loss: -0.002 | Best score: 2952 | Best tile: 256
+Episode 100/2000 | Score: 1084 | Avg(50): 1271.2 | Baseline: 39.27 | Loss: -0.001 | Best score: 2952 | Best tile: 256
+Episode 150/2000 | Score: 2296 | Avg(50): 1199.8 | Baseline: 37.57 | Loss: 0.000 | Best score: 3056 | Best tile: 256
+Episode 200/2000 | Score: 788 | Avg(50): 1071.0 | Baseline: 34.73 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 250/2000 | Score: 648 | Avg(50): 1022.0 | Baseline: 36.45 | Loss: -0.000 | Best score: 3056 | Best tile: 256
+Episode 300/2000 | Score: 592 | Avg(50): 1045.7 | Baseline: 35.58 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 350/2000 | Score: 1332 | Avg(50): 1150.7 | Baseline: 39.23 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 400/2000 | Score: 648 | Avg(50): 1090.6 | Baseline: 37.56 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 450/2000 | Score: 1356 | Avg(50): 1057.8 | Baseline: 36.69 | Loss: -0.002 | Best score: 3056 | Best tile: 256
+Episode 500/2000 | Score: 1012 | Avg(50): 1005.8 | Baseline: 34.19 | Loss: -0.000 | Best score: 3056 | Best tile: 256
+Episode 550/2000 | Score: 924 | Avg(50): 1141.4 | Baseline: 38.67 | Loss: 0.000 | Best score: 3056 | Best tile: 256
+Episode 600/2000 | Score: 348 | Avg(50): 1115.7 | Baseline: 37.58 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 650/2000 | Score: 1300 | Avg(50): 1015.7 | Baseline: 34.55 | Loss: 0.000 | Best score: 3056 | Best tile: 256
+Episode 700/2000 | Score: 1272 | Avg(50): 1099.8 | Baseline: 38.95 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 750/2000 | Score: 1196 | Avg(50): 1142.9 | Baseline: 36.41 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 800/2000 | Score: 1456 | Avg(50): 1221.3 | Baseline: 39.69 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 850/2000 | Score: 1184 | Avg(50): 1061.8 | Baseline: 36.12 | Loss: -0.002 | Best score: 3056 | Best tile: 256
+Episode 900/2000 | Score: 804 | Avg(50): 958.0 | Baseline: 35.58 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 950/2000 | Score: 1152 | Avg(50): 973.6 | Baseline: 33.89 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 1000/2000 | Score: 916 | Avg(50): 1194.4 | Baseline: 37.41 | Loss: 0.000 | Best score: 3056 | Best tile: 256
+Episode 1050/2000 | Score: 728 | Avg(50): 1012.4 | Baseline: 32.56 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 1100/2000 | Score: 1104 | Avg(50): 1038.4 | Baseline: 35.18 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 1150/2000 | Score: 984 | Avg(50): 1008.1 | Baseline: 34.31 | Loss: -0.000 | Best score: 3056 | Best tile: 256
+Episode 1200/2000 | Score: 716 | Avg(50): 1105.4 | Baseline: 34.97 | Loss: -0.000 | Best score: 3056 | Best tile: 256
+Episode 1250/2000 | Score: 664 | Avg(50): 1071.0 | Baseline: 38.31 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 1300/2000 | Score: 2480 | Avg(50): 1000.0 | Baseline: 35.03 | Loss: -0.004 | Best score: 3056 | Best tile: 256
+Episode 1350/2000 | Score: 1364 | Avg(50): 1030.6 | Baseline: 36.10 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 1400/2000 | Score: 1308 | Avg(50): 1240.2 | Baseline: 40.16 | Loss: 0.001 | Best score: 3056 | Best tile: 256
+Episode 1450/2000 | Score: 856 | Avg(50): 1288.6 | Baseline: 40.83 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 1500/2000 | Score: 752 | Avg(50): 1110.0 | Baseline: 35.99 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 1550/2000 | Score: 748 | Avg(50): 1033.8 | Baseline: 36.72 | Loss: -0.000 | Best score: 3056 | Best tile: 256
+Episode 1600/2000 | Score: 1336 | Avg(50): 1167.4 | Baseline: 39.63 | Loss: -0.000 | Best score: 3056 | Best tile: 256
+Episode 1650/2000 | Score: 2968 | Avg(50): 1019.2 | Baseline: 35.25 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 1700/2000 | Score: 268 | Avg(50): 1153.5 | Baseline: 35.07 | Loss: 0.000 | Best score: 3056 | Best tile: 256
+Episode 1750/2000 | Score: 308 | Avg(50): 1022.7 | Baseline: 31.61 | Loss: -0.002 | Best score: 3056 | Best tile: 256
+Episode 1800/2000 | Score: 848 | Avg(50): 1099.2 | Baseline: 36.93 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 1850/2000 | Score: 792 | Avg(50): 1109.9 | Baseline: 36.53 | Loss: -0.000 | Best score: 3056 | Best tile: 256
+Episode 1900/2000 | Score: 848 | Avg(50): 1063.8 | Baseline: 34.49 | Loss: -0.001 | Best score: 3056 | Best tile: 256
+Episode 1950/2000 | Score: 1436 | Avg(50): 1187.0 | Baseline: 38.47 | Loss: -0.000 | Best score: 3056 | Best tile: 256
+Episode 2000/2000 | Score: 492 | Avg(50): 1162.6 | Baseline: 38.25 | Loss: -0.002 | Best score: 3056 | Best tile: 256
+Training complete | Best score: 3056 | Best tile: 256
+
+Generating training plot...
+Saved average score plot to experiment_2_training.png
+
+Running evaluation...
+Evaluation over 50 episodes: avg score = 1565.7, best score = 4992, best tile = 512
+
+Generating evaluation plot...
+Saved evaluation score plot to experiment_2_evaluation.png
+
+================================================================================
+DENEY-2 SONUÇLARI:
+================================================================================
+Average evaluation score: 1565.7
+Best evaluation score: 4992
+(Best tile information is shown in evaluation output above)
+================================================================================
+Training and evaluation complete for Experiment 2.
+================================================================================

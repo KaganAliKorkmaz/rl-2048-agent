@@ -1,0 +1,99 @@
+{
+  "training": {
+    "total_episodes": 10000,
+    "best_score": 4660,
+    "final_avg_score": 1073.44
+  },
+  "final_evaluation": {
+    "num_episodes": 100,
+    "avg_score": 1441.24,
+    "best_score": 4016,
+    "best_tile": 256,
+    "tiles_1024_count": 0,
+    "tiles_2048_count": 0
+  },
+  "periodic_evaluations": [
+    {
+      "episode": 1000,
+      "avg_score": 1327.24,
+      "best_score": 3016,
+      "best_tile": 256,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 2000,
+      "avg_score": 1263.56,
+      "best_score": 3124,
+      "best_tile": 256,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 3000,
+      "avg_score": 1062.52,
+      "best_score": 2804,
+      "best_tile": 256,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 4000,
+      "avg_score": 1442.2,
+      "best_score": 3336,
+      "best_tile": 256,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 5000,
+      "avg_score": 1058.84,
+      "best_score": 4468,
+      "best_tile": 512,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 6000,
+      "avg_score": 1353.24,
+      "best_score": 3396,
+      "best_tile": 256,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 7000,
+      "avg_score": 1144.56,
+      "best_score": 4960,
+      "best_tile": 512,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 8000,
+      "avg_score": 1517.96,
+      "best_score": 3812,
+      "best_tile": 256,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 9000,
+      "avg_score": 1351.6,
+      "best_score": 4604,
+      "best_tile": 512,
+      "1024_count": 0,
+      "2048_count": 0
+    },
+    {
+      "episode": 10000,
+      "avg_score": 1293.6,
+      "best_score": 3252,
+      "best_tile": 256,
+      "1024_count": 0,
+      "2048_count": 0
+    }
+  ],
+  "architecture": "Feedforward (NO LSTM)",
+  "network": "PolicyNet256 + ValueNet256"
+}
